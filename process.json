@@ -1,0 +1,24 @@
+{
+  "apps": [
+    {
+      "name": "my-website",
+      "script": "./src/index.js",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 8080
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "PORT": 8080
+      },
+      "env_local": {
+        "NODE_ENV": "local",
+        "PORT": 8888
+      },
+      "log_date_format"  : "YYYY-MM-DD HH:mm:ss",
+      "out_file": "./logs/automatic-out.log",
+      "error_file": "./logs/automatic-err.log",
+      "merge_logs": true
+    }
+  ]
+}
