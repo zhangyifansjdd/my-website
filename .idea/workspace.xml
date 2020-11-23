@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="95b5a8f3-3fb2-460a-a083-5c6d79223fe0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/views/Error.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kXzyBwKHYfdL0nmV0BJHzCp051" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vuesrc" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\my-website\vuesrc" />
+      <recent name="D:\WebstormProjects\my-website" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-website/vuesrc/dist/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vuesrc/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docs:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="pm2_start_runtime_local" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="pm2_start_runtime_local" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vuesrc/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.pm2_start_runtime_local" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95b5a8f3-3fb2-460a-a083-5c6d79223fe0" name="Default Changelist" comment="" />
+      <created>1605861977655</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605861977655</updated>
+      <workItem from="1605861979053" duration="3676000" />
+      <workItem from="1606093822481" duration="4935000" />
+      <workItem from="1606114195212" duration="2718000" />
+    </task>
+    <task id="LOCAL-00001" summary="配置gitignore">
+      <created>1605862601609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605862601609</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1605865859394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605865859394</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1605866548588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605866548588</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init">
+      <created>1605866598718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605866598718</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init">
+      <created>1605866735787</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605866735787</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="配置gitignore" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1605866735248">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605866735248" />
+    <state width="246" height="286" key="Git.Branch.Popup" timestamp="1605862008108">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="246" height="286" key="Git.Branch.Popup/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605862008108" />
+    <state width="1515" height="203" key="GridCell.Tab.0.bottom" timestamp="1606116811526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
+    <state width="1515" height="203" key="GridCell.Tab.0.center" timestamp="1606116811526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="203" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
+    <state width="1515" height="203" key="GridCell.Tab.0.left" timestamp="1606116811526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="203" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
+    <state width="1515" height="203" key="GridCell.Tab.0.right" timestamp="1606116811526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
+    <state x="569" y="114" key="RollbackChangesDialog" timestamp="1605866837568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="569" y="114" key="RollbackChangesDialog/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605866837568" />
+    <state x="117" y="45" key="SettingsEditor" timestamp="1605862683240">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="117" y="45" key="SettingsEditor/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605862683240" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1605866736563">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605866736563" />
+  </component>
+</project>

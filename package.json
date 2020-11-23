@@ -4,6 +4,8 @@
   "description": "我的博客",
   "author": "zhangyifansjdd",
   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "pm2_start": "pm2-runtime start process.json --env production",
     "pm2_start_runtime": "pm2-runtime start process.json --env production",
     "pm2_start_runtime_local": "pm2-runtime start process.json --env local",
@@ -26,5 +28,8 @@
     "koa-static": "^5.0.0",
     "koa2-cors": "^2.0.6",
     "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "vuepress": "^1.7.1"
   }
 }
