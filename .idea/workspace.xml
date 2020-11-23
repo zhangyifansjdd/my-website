@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95b5a8f3-3fb2-460a-a083-5c6d79223fe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/views/About.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/views/Error.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuesrc/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/app.b00e02bd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-vendors.1e73e159.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/ionicons.143146fa.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/ionicons.99ac3308.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/ionicons.d535a25a.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/ionicons.a2c4a261.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/logo.82b9c7a5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/404.f1c909c1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/about.7d22e6e5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/app.d1dfcf40.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-vendors.7c4e4be3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/src/plugins/iview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuesrc/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuesrc/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuesrc/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuesrc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuesrc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuesrc/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuesrc/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuesrc/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuesrc/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuesrc/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuesrc/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuesrc/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuesrc/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +65,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vuesrc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\WebStorm\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -69,7 +74,7 @@
       <recent name="D:\WebstormProjects\my-website" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RunManager" selected="npm.pm2_start_runtime_local">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-website/vuesrc/dist/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -115,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.pm2_start_runtime_local" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.serve" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.docs:dev" />
-        <item itemvalue="npm.pm2_start_runtime_local" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +138,7 @@
       <updated>1605861977655</updated>
       <workItem from="1605861979053" duration="3676000" />
       <workItem from="1606093822481" duration="4935000" />
-      <workItem from="1606114195212" duration="2718000" />
+      <workItem from="1606114195212" duration="8129000" />
     </task>
     <task id="LOCAL-00001" summary="配置gitignore">
       <created>1605862601609</created>
@@ -170,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605866735787</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init">
+      <created>1606117043096</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606117043096</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,41 +197,45 @@
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1605866735248">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1606117042291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605866735248" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606117042291" />
+    <state x="136" y="65" key="DiffContextDialog" timestamp="1606120436085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="136" y="65" key="DiffContextDialog/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606120436085" />
     <state width="246" height="286" key="Git.Branch.Popup" timestamp="1605862008108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="246" height="286" key="Git.Branch.Popup/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605862008108" />
-    <state width="1515" height="203" key="GridCell.Tab.0.bottom" timestamp="1606116811526">
+    <state width="1515" height="203" key="GridCell.Tab.0.bottom" timestamp="1606119531378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
-    <state width="1515" height="203" key="GridCell.Tab.0.center" timestamp="1606116811526">
+    <state width="1515" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606119531378" />
+    <state width="1515" height="203" key="GridCell.Tab.0.center" timestamp="1606119531377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="203" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
-    <state width="1515" height="203" key="GridCell.Tab.0.left" timestamp="1606116811526">
+    <state width="1515" height="203" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606119531377" />
+    <state width="1515" height="203" key="GridCell.Tab.0.left" timestamp="1606119531377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="203" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
-    <state width="1515" height="203" key="GridCell.Tab.0.right" timestamp="1606116811526">
+    <state width="1515" height="203" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606119531377" />
+    <state width="1515" height="203" key="GridCell.Tab.0.right" timestamp="1606119531378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606116811526" />
-    <state x="569" y="114" key="RollbackChangesDialog" timestamp="1605866837568">
+    <state width="1515" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606119531378" />
+    <state x="569" y="114" key="RollbackChangesDialog" timestamp="1606120437025">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="569" y="114" key="RollbackChangesDialog/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605866837568" />
+    <state x="569" y="114" key="RollbackChangesDialog/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606120437025" />
     <state x="117" y="45" key="SettingsEditor" timestamp="1605862683240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="117" y="45" key="SettingsEditor/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605862683240" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1605866736563">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1606117055755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1605866736563" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.864@0.0.1536.824" timestamp="1606117055755" />
   </component>
 </project>
