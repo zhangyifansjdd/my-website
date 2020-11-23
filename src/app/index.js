@@ -1,7 +1,7 @@
 const koa = require('koa');
 const app = new koa();
 const koaStatic = require('koa-static');
-const historyFallback = require('koa2-history-api-fallback')
+// const historyFallback = require('koa2-history-api-fallback')
 
 // app.use(historyFallback({
 //   index:'./dist/index.html'
