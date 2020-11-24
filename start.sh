@@ -1,1 +1,1 @@
-pm2-runtime start process.json --env local
+pm2 start process.json --env local
