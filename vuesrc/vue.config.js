@@ -3,7 +3,7 @@ const resolve = dir => path.join(__dirname, dir);
 
 module.exports = {
   publicPath: './',
-  outputDir: '../dist/',
+  outputDir: '../dist',
   runtimeCompiler: true,
   productionSourceMap: false,
   chainWebpack: (config) => {
