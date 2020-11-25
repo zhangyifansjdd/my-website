@@ -1,3 +1,5 @@
 'use strict';
 
-console.log('开始工具');
+window.startAutoBaozhang = function () {
+  console.log('开始工具');
+};
