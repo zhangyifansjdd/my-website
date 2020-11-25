@@ -7,6 +7,7 @@ const koaStatic = require('koa-static');
 //   index:'./dist/index.html'
 // }));
 app.use(koaStatic('./dist/'));//提供前端服务
+app.use(koaStatic('./static/'));//静态文件
 
 let port = process.env.PORT;
 if (!port) {
