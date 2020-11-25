@@ -31,6 +31,7 @@
     "qs": "^6.9.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "vuepress": "^1.7.1"
   }
 }
