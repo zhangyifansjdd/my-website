@@ -3,7 +3,9 @@ const app = new koa();
 const koaMount = require('koa-mount');
 const koaStatic = require('koa-static');
 const historyFallback = require('koa2-history-api-fallback')
+const compress = require('./compress')
 
+app.use(compress);//页面压缩
 app.use(historyFallback({
   index:'/website/index.html',
   verbose: false
