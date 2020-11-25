@@ -1,5 +1,5 @@
-'use strict';
+"use strict";
 
-window.startAutoBaozhang = function () {
-  console.log('开始工具');
-};
+function setYingyinzhangshu(value) {
+  $("#query-form>.row:nth-child(1)>div:nth-child(12) .k-formatted-value.k-input").val(value);
+}
