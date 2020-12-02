@@ -7,11 +7,11 @@ const compress = require('./compress')
 
 app.use(compress);//页面压缩
 app.use(historyFallback({
-  index:'/website/index.html',
+  index:'/index.html',
   verbose: false
 }));
-app.use(koaMount('/website',koaStatic('./dist/')));//提供前端服务
-app.use(koaMount('/website/static',koaStatic('./static/')))//静态文件
+app.use(koaMount('/',koaStatic('./dist/')));//提供前端服务
+app.use(koaMount('/static',koaStatic('./static/')))//静态文件
 
 let port = process.env.PORT;
 if (!port) {
