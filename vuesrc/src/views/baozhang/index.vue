@@ -1,8 +1,5 @@
 <template>
   <div class="layout">
-    <button
-      style="width: 100px;height: 50px;background: #42b983;border-radius: 50px;position: fixed;bottom: 100px;right: 50px;z-index: 100;outline: none;border: 0;box-shadow: 0px 5px 5px 0px #42b983;"
-    >点击自动填写</button>
     <Layout>
       <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
         <Menu @on-select="onSelect" theme="dark" width="auto" :class="menuitemClasses">
