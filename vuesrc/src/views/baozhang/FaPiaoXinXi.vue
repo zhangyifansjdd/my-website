@@ -4,7 +4,7 @@
     <Button type="primary" @click="addTab" :style="{margin:'10px'}">增加月份</Button>
     <Button :style="{margin:'10px'}" type="success" :loading="isLoading" @click="submit">提交</Button>
 
-    <Tabs type="card" closable @on-tab-remove="handleTabRemove" style="min-height: 500px">
+    <Tabs type="card" @on-tab-remove="handleTabRemove" style="min-height: 500px">
       <TabPane v-for="(item,index) of tabs"
                :label="item.month" :name="item.month">
         <Input v-model="item.addItem.actualUser" placeholder="实际报账人" style="width: 120px"/>
