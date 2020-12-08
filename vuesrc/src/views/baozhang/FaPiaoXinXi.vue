@@ -32,7 +32,7 @@
     name: "FaPiaoXinXi",
     data() {
       return {
-        userInfo:DataManager.getUserInfo(),
+        userInfo: DataManager.getUserInfo(),
         inputDate: '',
         isLoading: false,
         columns: [
@@ -93,6 +93,9 @@
         console.log(name);
       },
       addTab() {
+        if (!this.inputDate.includes('月')) {
+          this.inputDate = this.inputDate + '月';
+        }
         this.tabs.push({
           month: this.inputDate,
           addItem: {
@@ -141,7 +144,6 @@
           .finally(() => {
             this.isLoading = false;
           })
-
 
 
       }
