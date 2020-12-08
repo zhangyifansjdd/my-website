@@ -60,18 +60,26 @@
           password: this.password
         })
           .then(response => {
-            this.$Notice.open({
-              title: '结果',
-              desc: this.confirmPassword ? '注册成功' : '登录成功'
-            });
-            localStorage.setItem('userName', this.userName);
+            if (response.returnCode==200){
+              this.$Notice.open({
+                title: '结果',
+                desc: this.confirmPassword ? '注册成功' : '登录成功'
+              });
+              localStorage.setItem('userName', this.userName);
 
-            let callbackUrl = response.callbackurl;
-            if (callbackUrl) {
-              setTimeout(() => {
-                this.$router.push(callbackUrl)
-              }, 2000);
+              let callbackUrl = response.callbackurl;
+              if (callbackUrl) {
+                setTimeout(() => {
+                  this.$router.push(callbackUrl)
+                }, 2000);
+              }
+            }else {
+              this.$Notice.open({
+                title: '结果',
+                desc: `${this.confirmPassword ? '注册' : '登录'}失败，姓名或密码输入错误`
+              });
             }
+
           })
           .catch(e => {
             console.log(e);
