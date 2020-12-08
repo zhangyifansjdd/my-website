@@ -18,9 +18,18 @@
         </Menu>
       </Sider>
       <Layout>
-        <!--        <Header :style="{padding: 0}" class="layout-header-bar">-->
-        <!--          <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '0 20px'}" type="md-menu" size="24"></Icon>-->
-        <!--        </Header>-->
+        <Header :style="{padding: 0}" class="layout-header-bar">
+          <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '0 20px'}" type="md-menu"
+                size="24"></Icon>
+          <Icon @click.native="showLogoutDialog=true" :style="{position:'absolute',right:'40px',top:'20px'}"
+                type="md-exit" size="24"></Icon>
+          <Modal
+            v-model="showLogoutDialog"
+            title="退出"
+            @on-ok="logout">
+            <p>确定退出登录？</p>
+          </Modal>
+        </Header>
         <Content :style="{margin: '20px', background: '#fff', minHeight: '600px'}">
           <!--          <a href="http://www.cmossafe.top:8180/chessMaster/downSingleFile?fileName=tinified%20(56).zip">下载</a>Content-->
           <FaPiaoXinXi v-if="this.selectedMenu==='发票信息'"/>
@@ -36,13 +45,15 @@
   import DianZiFaPiao from "@/views/baozhang/DianZiFaPiao";
   import DataManager from "@/js/baozhang/DataManager";
   import ChaxunXiazai from "@/views/baozhang/ChaxunXiazai";
+  import Http from "@/libs/Http";
 
   export default {
     components: {ChaxunXiazai, DianZiFaPiao, FaPiaoXinXi},
     data() {
       return {
         isCollapsed: false,
-        selectedMenu: '发票信息'
+        selectedMenu: '发票信息',
+        showLogoutDialog: false
       }
     },
     computed: {
@@ -66,6 +77,35 @@
       onSelect(name) {
         console.log(name);
         this.selectedMenu = name;
+      },
+      logout() {
+        Http.get('/api/logout', {})
+          .then(response => {
+            if (response.returnCode == 200) {
+              this.$Notice.open({
+                title: '结果',
+                desc: '退出成功'
+              });
+              localStorage.removeItem('userName');
+
+              setTimeout(() => {
+                window.location.href = '/baozhang';
+              }, 1000);
+            } else {
+              this.$Notice.open({
+                title: '结果',
+                desc: '退出失败'
+              });
+            }
+
+          })
+          .catch(e => {
+            console.log(e);
+            this.$Notice.open({
+              title: '结果',
+              desc: '退出失败'
+            });
+          })
       }
     },
     mounted() {
@@ -78,10 +118,10 @@
         })
 
       DataManager.queryTemplateInfo()
-        .then(response=>{
+        .then(response => {
           console.log(response);
         })
-        .catch(e=>{
+        .catch(e => {
           console.log(e);
         })
     }

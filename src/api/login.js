@@ -57,6 +57,24 @@ router.get('/login', async (ctx, next) => {
   }
 });
 
+//注销
+router.get('/logout', async (ctx, next) => {
+  if(ctx.session){
+    ctx.session =null;//清空session
+    ctx.response.body = {
+      returnCode:200,
+      message:'登出成功'
+    }
+    console.log('登出成功')
+  }else{
+    ctx.response.body = {
+      returnCode:400,
+      message:'session 已失效'
+    }
+    console.log("当前 session 已失效");
+  }
+});
+
 
 router.get('/auth', async (ctx, next) => {
   console.log('auth', ctx.session.userName);

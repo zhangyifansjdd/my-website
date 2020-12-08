@@ -60,7 +60,7 @@
           password: this.password
         })
           .then(response => {
-            if (response.returnCode==200){
+            if (response.returnCode == 200) {
               this.$Notice.open({
                 title: '结果',
                 desc: this.confirmPassword ? '注册成功' : '登录成功'
@@ -71,9 +71,9 @@
               if (callbackUrl) {
                 setTimeout(() => {
                   this.$router.push(callbackUrl)
-                }, 2000);
+                }, 1000);
               }
-            }else {
+            } else {
               this.$Notice.open({
                 title: '结果',
                 desc: `${this.confirmPassword ? '注册' : '登录'}失败，姓名或密码输入错误`
