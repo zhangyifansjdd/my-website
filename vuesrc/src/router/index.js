@@ -14,13 +14,13 @@ const routes = [
     path: '/baozhang',
     name: 'baozhang',
     meta: {title: '填报大师'},
-    component: () => import(/* webpackChunkName: "baozhang" */ '../views/baozhang/index')
+    component: () => import(/* webpackChunkName: "baozhang" */ '../views/baozhang/index'),
   },
   {
-    path: '/login',
+    path: '/bzLogin',
     name: 'login',
     meta: {title: '登录'},
-    component: () => import(/* webpackChunkName: "login" */ '../views/baozhang/login')
+    component: () => import(/* webpackChunkName: "baozhang_login" */ '../views/baozhang/login')
   },
   {
     path: '/about',
