@@ -32,8 +32,8 @@
         </Header>
         <Content :style="{margin: '20px', background: '#fff', minHeight: '600px'}">
           <!--          <a href="http://www.cmossafe.top:8180/chessMaster/downSingleFile?fileName=tinified%20(56).zip">下载</a>Content-->
-          <FaPiaoXinXi v-if="this.selectedMenu==='发票信息'"/>
-          <DianZiFaPiao v-if="this.selectedMenu==='电子发票'"/>
+          <FaPiaoXinXi v-show="this.selectedMenu==='发票信息'"/>
+          <DianZiFaPiao v-show="this.selectedMenu==='电子发票'"/>
           <ChaxunXiazai v-if="this.selectedMenu==='查询下载'"/>
         </Content>
       </Layout>

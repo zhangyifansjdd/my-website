@@ -75,8 +75,8 @@
           {
             month: '10月',
             addItem: {
-              actualUser: '',
-              headUser: '',
+              actualUser: localStorage.getItem('userName'),
+              headUser: '赵彩迪',
               invoiceType: '',
               invoiceNumber: '',
               vmDate: '',
@@ -99,8 +99,8 @@
         this.tabs.push({
           month: this.inputDate,
           addItem: {
-            actualUser: '',
-            headUser: '',
+            actualUser: localStorage.getItem('userName'),
+            headUser: '赵彩迪',
             invoiceType: '',
             invoiceNumber: '',
             vmDate: '',
@@ -112,8 +112,8 @@
       },
       clear(item) {
         item.addItem = {
-          actualUser: '',
-          headUser: '',
+          actualUser: localStorage.getItem('userName'),
+          headUser: '赵彩迪',
           invoiceType: '',
           invoiceNumber: '',
           vmDate: '',

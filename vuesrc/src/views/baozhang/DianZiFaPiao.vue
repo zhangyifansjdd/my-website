@@ -39,13 +39,13 @@
         userInfo:DataManager.getUserInfo(),
         isLoading:false,
         addData: {
-          invoiceType: '',
+          invoiceType: '10',
           invoiceCode: '',
           invoiceNumber: '',
-          pageNumber: '',
+          pageNumber: '1',
           invoiceDate: '',
           invoiceCheckCode: '',
-          buyEin: '',
+          buyEin: '91410300317347029Q',
           sellEin: '',
         },
         invoiceTypeList: [
@@ -164,13 +164,13 @@
       clear() {
         console.log('clear');
         this.addData = {
-          invoiceType: '',
+          invoiceType: '10',
           invoiceCode: '',
           invoiceNumber: '',
-          pageNumber: '',
+          pageNumber: '1',
           invoiceDate: '',
           invoiceCheckCode: '',
-          buyEin: '',
+          buyEin: '91410300317347029Q',
           sellEin: '',
         }
       },
