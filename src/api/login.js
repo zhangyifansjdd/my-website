@@ -12,7 +12,6 @@ router.get('/logon', async (ctx, next) => {
   let sqlParams = [userName, password];
   try {
     let result = await mysql.exeSql(sql, sqlParams);
-    console.log('logon');
     ctx.body.returnCode = 200;
     ctx.session.userName = userName;
     ctx.body.message = '登录成功';
@@ -21,7 +20,6 @@ router.get('/logon', async (ctx, next) => {
       ctx.session.callbackurl = '';
     }
   } catch (e) {
-    console.log('logon',e);
     ctx.body.returnCode = 400;
     ctx.body.message = '登录失败';
   }
@@ -33,8 +31,6 @@ router.get('/login', async (ctx, next) => {
   let userName = params.userName;
   let password = params.password;
   
-  console.log(ctx.request.query);
-  console.log('login', userName, password);
   ctx.body = {};
   const sql = `SELECT * FROM baozhang_user where userName='${userName}' and password='${password}'`;
   try {
@@ -77,21 +73,17 @@ router.get('/logout', async (ctx, next) => {
 
 
 router.get('/auth', async (ctx, next) => {
-  console.log('auth', ctx.session.userName);
-  let userName = '张一凡';
-  let password = '1234567';
-  const sql = `SELECT * FROM baozhang_user where userName='${userName}' and password='${password}'`;
-  try {
-    
-    let result = await mysql.exeSql(sql);
-    console.log(result);
-    for (let item of result) {
-      console.log(item);
+  if(ctx.session){
+    ctx.response.body = {
+      returnCode:200,
+      message:'成功',
+      session:ctx.session
     }
-  } catch (e) {
-    console.log(e);
-  } finally {
+  }else{
+    ctx.response.body = {
+      returnCode:400,
+      message:'session 已失效'
+    }
   }
 });
-
 module.exports = router;
