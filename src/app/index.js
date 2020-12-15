@@ -10,7 +10,6 @@ app.keys = ['zhangyfiansjdd'];
 app.use(require('./session'))
 
 app.use(async (ctx, next) => {
-  console.log('session',ctx.request.path,ctx.session);
   if (ctx.request.headers['accept'].includes('text/html')) {
     if (ctx.request.path == '/baozhang' && (!ctx.session || !ctx.session.userName)) {
       ctx.session.callbackurl = ctx.request.path;

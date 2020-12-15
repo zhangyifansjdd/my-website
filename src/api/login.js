@@ -1,5 +1,5 @@
 const router = require('koa-router')();
-const mysql = require('../app/mysql');
+const mysql = require('../libs/mysql');
 
 //注册
 router.get('/logon', async (ctx, next) => {
@@ -35,6 +35,7 @@ router.get('/login', async (ctx, next) => {
   const sql = `SELECT * FROM baozhang_user where userName='${userName}' and password='${password}'`;
   try {
     let result = await mysql.exeSql(sql);
+    console.log('result',result);
     if (result.length > 0) {
       ctx.body.returnCode = 200;
       ctx.session.userName = userName;
@@ -48,8 +49,10 @@ router.get('/login', async (ctx, next) => {
       ctx.body.message = '登录失败';
     }
   } catch (e) {
+    console.error(e);
     ctx.body.returnCode = 400;
     ctx.body.message = '登录失败';
+    ctx.body.error=e
   }
 });
 
