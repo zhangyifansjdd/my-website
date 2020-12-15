@@ -14,12 +14,10 @@ module.exports = {
     let result = '';
     try {
       connection = await promisify(pool.getConnection).bind(pool)();
-      console.log('connection',connection);
       result = await promisify(connection.query).bind(connection)(sql, sqlParams);
     } catch (e) {
       throw e;
     } finally {
-      console.log('finally',connection.release);
       if (connection) {
         connection.release();
       }
