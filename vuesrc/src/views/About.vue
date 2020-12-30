@@ -1,7 +1,7 @@
 <template>
   <div style="font-size: 30px">
-    <button style="margin: 10px" @click="test">按钮1</button>
-    <button style="margin: 10px" @click="test1">按钮2</button>
+    <button style="margin: 10px" @click="test">微信</button>
+    <button style="margin: 10px" @click="test1">支付宝</button>
   </div>
 </template>
 

@@ -2,10 +2,17 @@ const compose = require('koa-compose');
 const cors = require('koa2-cors'); //跨域处理
 const router = require('koa-router')();
 const bodyParser = require('koa-body');
-router.use(bodyParser());//解析参数到body
+router.use(bodyParser({
+  multipart:true, // 支持文件上传
+  formidable: {
+    maxFieldsSize: 200 * 1024 * 1024, // 文件上传大小
+  }
+}));
 
 const login = require('./login');
+const file = require('./file');
 router.use('/api', login.routes());
+router.use('/api', file.routes());
 
 
 module.exports = compose([
