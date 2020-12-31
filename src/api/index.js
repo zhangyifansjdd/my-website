@@ -14,6 +14,13 @@ const file = require('./file');
 router.use('/api', login.routes());
 router.use('/api', file.routes());
 
+let random = Math.floor(Math.random()*10000);
+router.get('/api/test', async (ctx, next) => {
+  ctx.body = {
+    message:random
+  };
+})
+
 
 module.exports = compose([
   cors({
