@@ -1,15 +1,20 @@
+import path from "path";
+
 const koa = require('koa');
 const app = new koa();
 const koaMount = require('koa-mount');
 const koaStatic = require('koa-static');
-const historyFallback = require('koa2-history-api-fallback')
+// const historyFallback = require('koa2-history-api-fallback')
+const historyFallback = require('./historyFallback');
 const compress = require('./compress')
 const api = require('../api/index');
+import views from 'koa-views';
 
 app.keys = ['zhangyfiansjdd'];
 app.use(require('./session'))
 
 app.use(async (ctx, next) => {
+  console.log('index:',ctx.url);
   if (ctx.request.headers['accept'].includes('text/html')) {
     if (ctx.request.path == '/baozhang' && (!ctx.session || !ctx.session.userName)) {
       ctx.session.callbackurl = ctx.request.path;
@@ -21,10 +26,13 @@ app.use(async (ctx, next) => {
 
 app.use(api);//接口
 app.use(compress);//页面压缩
-app.use(historyFallback({
-  index: '/index.html',
-  verbose: false
-}));
+// app.use(historyFallback({
+//   index: '/index.html',
+//   verbose: false
+// }));
+app.use(views(__dirname));
+app.use(historyFallback);
+app.use(koaMount('/v3', koaStatic('./dist-vue3/')));//提供前端服务
 app.use(koaMount('/', koaStatic('./dist/')));//提供前端服务
 app.use(koaMount('/static', koaStatic('./static/')))//静态文件
 
