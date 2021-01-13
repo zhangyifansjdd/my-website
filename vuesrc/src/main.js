@@ -5,7 +5,6 @@ import store from './store'
 import './plugins/iview.js'
 
 Vue.config.productionTip = false
-
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title
   next()

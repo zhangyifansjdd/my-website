@@ -1,5 +1,6 @@
 <template>
   <div class="login">
+    <MyNest/>
     <div class="login_block">
       <Input v-model="userName" prefix="ios-contact"
              placeholder="请输入姓名"
@@ -27,9 +28,11 @@
 
 <script>
   import Http from "@/libs/Http";
+  import MyNest from "@/components/MyNest";
 
   export default {
     name: "login",
+    components: {MyNest},
     data() {
       return {
         userName: '',
@@ -106,7 +109,6 @@
     left: 0;
     right: 0;
     font-size: 0;
-    background: url("../../assets/background.png");
     width: auto;
     height: 100%;
     overflow: hidden;
