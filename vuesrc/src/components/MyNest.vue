@@ -4,14 +4,15 @@
 </template>
 <script>
   import CanvasNest from 'canvas-nest.js';
+
   export default {
     name: 'MyNest',
     props: {
       config: {
         type: Object,
-        default () {
+        default() {
           return {
-            color: '255,255,255',
+            color: '204,204,204',
             count: 260,
             opacity: 0.7,
             zIndex: -1
@@ -32,7 +33,7 @@
         this.cn = new CanvasNest(elm, this.config)
       }
     },
-    beforeDestroy () {
+    beforeDestroy() {
       const elm = document.querySelector(this.el)
       this.cn.destroy()
     }
@@ -40,7 +41,7 @@
 </script>
 <style scoped>
   .vue-canvas-nest-element {
-    background: #0f1c70;
+    background: white;
     display: block;
     position: absolute;
     top: 0;
