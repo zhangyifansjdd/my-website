@@ -2,9 +2,9 @@ const mysql = require('mysql');
 const {promisify} = require("util");
 
 const pool = mysql.createPool({
-  host: '47.96.154.251', // 填写你的mysql host
+  host: '82.156.87.86', // 填写你的mysql host
   user: 'root', // 填写你的mysql用户名
-  password: 'Zyfjqq1230829', // 填写你的mysql密码
+  password: 'mysqlpwd', // 填写你的mysql密码
   database: 'my_data'
 })
 
