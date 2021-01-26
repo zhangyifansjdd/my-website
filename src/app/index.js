@@ -31,11 +31,12 @@ app.use(compress);//页面压缩
 //   index: '/index.html',
 //   verbose: false
 // }));
+app.use(koaMount('/static', koaStatic('./static/')))//静态文件
 app.use(views(path.join(__dirname,'../../')));
 app.use(historyFallback);
-app.use(koaMount('/v3', koaStatic('./dist-vue3/')));//提供前端服务
+// app.use(koaMount('/v3', koaStatic('./dist-vue3/')));//提供前端服务
 app.use(koaMount('/', koaStatic('./dist/')));//提供前端服务
-app.use(koaMount('/static', koaStatic('./static/')))//静态文件
+
 
 
 let port = process.env.PORT;
