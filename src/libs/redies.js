@@ -1,6 +1,6 @@
 const {promisify} = require("util");
 let Redis = require('ioredis');
-let client = new Redis(6379, '82.156.87.86',{password:'redispwd'});
+let client = new Redis(6379, '82.156.87.86');
 
 
 const redisFunctionList = Object.keys(Object.getPrototypeOf(client))
