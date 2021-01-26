@@ -13,16 +13,8 @@ import views from 'koa-views';
 app.keys = ['zhangyfiansjdd'];
 app.use(require('./session'))
 
-let redis = require('../libs/redies')
-
-redis.set('foo', 'bar');
-redis.get('foo')
-  .then((result) => {
-    console.log(result);
-  })
-
 app.use(async (ctx, next) => {
-  console.log('index:', ctx.url);
+  console.log('first:', ctx.url);
   if (ctx.request.headers['accept'].includes('text/html')) {
     if (ctx.request.path == '/baozhang' && (!ctx.session || !ctx.session.userName)) {
       ctx.session.callbackurl = ctx.request.path;
