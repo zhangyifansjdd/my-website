@@ -15,7 +15,7 @@ app.use(require('./session'))
 
 app.use(async (ctx, next) => {
   console.log('first:', ctx.url);
-  if (ctx.request.headers['accept'].includes('text/html')) {
+  if (ctx.request.headers['accept'] && ctx.request.headers['accept'].includes('text/html')) {
     if (ctx.request.path == '/baozhang' && (!ctx.session || !ctx.session.userName)) {
       ctx.session.callbackurl = ctx.request.path;
       console.log('redirect');
@@ -32,11 +32,10 @@ app.use(compress);//页面压缩
 //   verbose: false
 // }));
 app.use(koaMount('/static', koaStatic('./static/')))//静态文件
-app.use(views(path.join(__dirname,'../../')));
+app.use(views(path.join(__dirname, '../../')));
 app.use(historyFallback);
-// app.use(koaMount('/v3', koaStatic('./dist-vue3/')));//提供前端服务
+app.use(koaMount('/v3', koaStatic('./dist-vue3/')));//提供前端服务
 app.use(koaMount('/', koaStatic('./dist/')));//提供前端服务
-
 
 
 let port = process.env.PORT;
