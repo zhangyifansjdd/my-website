@@ -13,6 +13,15 @@ import views from 'koa-views';
 app.keys = ['zhangyfiansjdd'];
 app.use(require('./session'))
 
+
+let redis = require('../libs/redis')
+
+redis.set('foo', 'bar');
+redis.get('foo')
+  .then((result) => {
+    console.log(result);
+  })
+
 app.use(async (ctx, next) => {
   console.log('first:', ctx.url);
   if (ctx.request.headers['accept'] && ctx.request.headers['accept'].includes('text/html')) {
@@ -44,5 +53,8 @@ if (!port) {
 }
 
 console.log('env:' + process.env.NODE_ENV);
+
+console.log(new Date());
+console.log(new Date().getTimezoneOffset());
 
 app.listen(port, () => console.log(`Server started on port ${port}`))

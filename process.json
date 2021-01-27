@@ -16,8 +16,9 @@
         "PORT": 8888
       },
       "log_date_format"  : "YYYY-MM-DD HH:mm:ss",
-      "out_file": "./logs/automatic-out.log",
-      "error_file": "./logs/automatic-err.log",
+      "timezone": "Asia/Beijing",
+      "out_file": "./logs/out.log",
+      "error_file": "./logs/err.log",
       "merge_logs": true
     }
   ]
