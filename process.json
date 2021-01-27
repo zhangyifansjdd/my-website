@@ -15,7 +15,7 @@
         "NODE_ENV": "local",
         "PORT": 8888
       },
-      "log_date_format"  : "YYYY-MM-DD HH:mm:ss",
+      "log_date_format"  : "YYYY-MM-DD HH:mm:ss Z",
       "timezone": "Asia/Beijing",
       "out_file": "./logs/out.log",
       "error_file": "./logs/err.log",
