@@ -23,6 +23,6 @@ module.exports = session({
   store:new Redis({
     port:6379,
     host:'82.156.87.86',
-    // password:'redispwd'
+    password:'zhangyifansjdd'
   }) // 在Redis中放入一个session对象
 })
