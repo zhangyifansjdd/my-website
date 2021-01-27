@@ -13,7 +13,8 @@
       },
       "env_local": {
         "NODE_ENV": "local",
-        "PORT": 8888
+        "PORT": 8888,
+        "TZ": "Asia/Beijing"
       },
       "log_date_format"  : "YYYY-MM-DD HH:mm:ss Z",
       "timezone": "Asia/Beijing",
