@@ -1,5 +1,5 @@
 module.exports = async (ctx, next) => {
-  await next();
+  
   if (ctx.status === 404 && ctx.request.headers['accept'].includes('text/html')) {
     if (ctx.url.startsWith('/v3')) {
       ctx.status = 200;
@@ -17,5 +17,5 @@ module.exports = async (ctx, next) => {
       }
     }
   }
-  
+  await next();
 };
