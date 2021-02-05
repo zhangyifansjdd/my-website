@@ -1,22 +1,17 @@
-function fun1() {
-  let count = 0;
-  for (let i = 0; i < 10000000; i++) {
-    count++;
+let config ={
+  statue: 'success',
+  title: '密码重置成功',
+  content: '请妥善保管您的新密码，感谢您的使用',
+  buttonTxt: '确定',
+  buttonAction: () => {
+     return '/website/automatic/pages/servicepwdreset.html';
   }
-  console.log(count);
+}
+let copyConfig = {};
+for (let key in config){
+  console.log(key);
+  copyConfig['_'+key]=config[key];
 }
 
-function fun2() {
+console.log(copyConfig);
 
-}
-
-let start = new Date().getTime();
-let count = 0;
-for (let i = 0; i < 10000000; i++) {
-  count++;
-}
-console.log(count);
-
-fun1();
-let end = new Date().getTime();
-console.log(end - start);

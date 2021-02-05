@@ -54,7 +54,4 @@ if (!port) {
 
 console.log('env:' + process.env.NODE_ENV);
 
-console.log('Date',new Date());
-console.log('getTimezoneOffset',new Date().getTimezoneOffset());
-
 app.listen(port, () => console.log(`Server started on port ${port}`))
