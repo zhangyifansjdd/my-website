@@ -8,7 +8,7 @@ module.exports = async (ctx, next) => {
       } catch (e) {
         console.error(ctx.url,e);
       }
-    } else if (ctx.url.startsWith('/')) {
+    } else if (ctx.url.startsWith('/websiteNew')) {
       ctx.status = 200;
       try {
         await ctx.render('/dist/index.html');
