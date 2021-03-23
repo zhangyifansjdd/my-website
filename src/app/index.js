@@ -35,7 +35,7 @@ app.use(async (ctx, next) => {
 });
 
 app.use(api);//接口
-app.use(compress);//页面压缩
+// app.use(compress);//页面压缩
 // app.use(historyFallback({
 //   index: '/index.html',
 //   verbose: false
