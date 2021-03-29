@@ -1,5 +1,15 @@
 version: '3'
 services:
+  mywebsite-0:
+    container_name: my-website-0
+    image: node/my-website:latest
+    environment:
+
+      TZ: Asia/Shanghai
+    ports:
+      - "8888:8888"
+    restart: always
+
   mywebsite-1:
     container_name: my-website-1
     image: node/my-website:latest
