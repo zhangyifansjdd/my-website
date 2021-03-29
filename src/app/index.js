@@ -35,16 +35,16 @@ app.use(async (ctx, next) => {
 });
 
 app.use(api);//接口
-// app.use(compress);//页面压缩
+app.use(compress);//页面压缩
 // app.use(historyFallback({
 //   index: '/index.html',
 //   verbose: false
 // }));
-app.use(koaMount('/websiteNew/static', koaStatic('./static/')))//静态文件
+app.use(koaMount('/static', koaStatic('./static/')))//静态文件
 app.use(views(path.join(__dirname, '../../')));
 app.use(historyFallback);
 app.use(koaMount('/v3', koaStatic('./dist-vue3/')));//提供前端服务
-app.use(koaMount('/websiteNew', koaStatic('./dist/')));//提供前端服务
+app.use(koaMount('/', koaStatic('./dist/')));//提供前端服务
 
 
 let port = process.env.PORT;
