@@ -123,6 +123,7 @@
     width: 300px;
     /*height: 200px;*/
     border-radius: 8px;
+    border: #2c3e50 1px solid;
 
     text-align: center;
   }
