@@ -10,21 +10,21 @@ services:
       - "8888:8888"
     restart: always
 
-  mywebsite-1:
-    container_name: my-website-1
-    image: node/my-website:latest
-    environment:
-
-      TZ: Asia/Shanghai
-    ports:
-      - "8889:8888"
-    restart: always
-
-  mywebsite-2:
-    container_name: my-website-2
-    image: node/my-website:latest
-    environment:
-      TZ: Asia/Shanghai
-    ports:
-      - "8890:8888"
-    restart: always
+#  mywebsite-1:
+#    container_name: my-website-1
+#    image: node/my-website:latest
+#    environment:
+#
+#      TZ: Asia/Shanghai
+#    ports:
+#      - "8889:8888"
+#    restart: always
+#
+#  mywebsite-2:
+#    container_name: my-website-2
+#    image: node/my-website:latest
+#    environment:
+#      TZ: Asia/Shanghai
+#    ports:
+#      - "8890:8888"
+#    restart: always
