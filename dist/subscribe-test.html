@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <title>subscribe-test</title>
+</head>
+<body>
+<div>
+<div class="btnClick" onclick="onBtnClick()">点我</div>
+</div>
+<script>
+  function onBtnClick() {
+    window.AlipayJSBridge.call('APSocialNebulaPlugin.subscribleMsg',
+            {
+              // 订阅者主体id
+              "appId": "2018112062226732",
+              // 模板id列表，最多3个
+              "entityIds": ['73e1445937ea4c31a1630a87fe4f7c19']
+            },
+            function(result){
+              console.log(JSON.stringify(result));
+              const { success, errorCode, errorMessage } = result;
+              alert('success： '+success)
+              alert('success： '+errorCode)
+              alert('success： '+errorMessage)
+            //  情况：
+              // 成功执行消息订阅，用户勾选了111、222两个模板，333未勾选
+              // success === true, res['111'] === 'accept', res['222'] === 'accept', res['333'] === 'reject'
+
+              // 失败
+              // success === false，具体错误参见下方errorCode错误码和errorMessage
+            })
+  }
+</script>
+<style>
+  .btnClick{
+    width:50px;
+    height:20px;
+    font-family: 'miui', sans-serif;
+    font-size:14px;
+    line-height: 20px;
+    background-color: #ffffff;
+    color:blue;
+    border: 1px solid blue;
+   text-align: center;
+  }
+</style>
+
+</body>
+</html>
